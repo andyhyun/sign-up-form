@@ -1,0 +1,176 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+@font-face {
+  font-family: norse-bold;
+  src: url("./fonts/Norse-Bold.otf");
+}
+
+:root {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url("./images/korea.jpg");
+  display: flex;
+}
+
+/* The Image Sidebar */
+.image-sidebar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.image-sidebar .logo {
+  font-family: norse-bold;
+  font-size: 4rem;
+  margin-top: 6rem;
+  height: 7rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 6rem;
+}
+
+.image-sidebar .credit {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.credit a {
+  color: white;
+}
+
+/* The Form Section */
+.form-section {
+  flex: 2;
+  background-color: #F9FAFB;
+}
+
+.form-section .description,
+.inputs h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.form-section .description,
+.form-section .inputs,
+.form-section .buttons {
+  padding-left: 2rem;
+  padding-right: max(16vw, 2rem);
+}
+
+.form-section .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 3rem;
+  min-height: 250px
+}
+
+.description p {
+  margin-top: 1.5rem;
+}
+
+.description em {
+  font-style: italic;
+}
+
+.form-section .inputs {
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 4px 4px lightgray;
+}
+
+.inputs h1 {
+  margin-bottom: 2rem;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.inputs p {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 0;
+  gap: 0.1rem;
+}
+
+p label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #444444;
+}
+
+p input {
+  appearance: none;
+  width: 16rem;
+  height: 1.5rem;
+  font-size: 1rem;
+  font-family: inherit;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.3rem;
+  border: 1px solid lightgray;
+}
+
+p input:focus {
+  outline: 1px solid blue;
+  box-shadow: 4px 4px 4px lightgray;
+}
+
+.form-section .buttons {
+  padding-top: 2rem;
+}
+
+.buttons button {
+  background-color: #637C90;
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  width: 17rem;
+  height: 3rem;
+  font-size: 1.25rem;
+  font-family: inherit;
+  font-weight: bold;
+  box-shadow: 4px 4px 4px lightgray;
+}
+
+.buttons p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
