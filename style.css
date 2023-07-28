@@ -152,6 +152,15 @@ p input:focus {
   box-shadow: 4px 4px 4px lightgray;
 }
 
+p input.error.active {
+  border: 1px solid red;
+}
+
+p span.error-message {
+  color: red;
+  font-size: 0.8rem;
+}
+
 .form-section .buttons {
   padding-top: 2rem;
 }
